@@ -16,7 +16,7 @@
 			
 			<section>
 				<center>
-				<font style="font-size :40px;">Aplikasi Peminjaman Inventaris</font>
+				<font style="font-size :40px;">Selamat Datang Di Halaman Profil</font>
 				</center>
 			</section>
 			
