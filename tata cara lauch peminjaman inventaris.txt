@@ -1,0 +1,47 @@
+IF-39-14 INVENTARIS UNIVERSITAS TELKOM
+1.FIKRI ATTAMAMI LAGULIGA 1301150028
+2.A FIQIH ZULFIKAR 1301154140
+3.RD MUHAMMAD SOPIAN PUTRA P 1301154420
+4.MUHAMMAD FATHAN 1301154336
+Dalam aplikasi ini, kami menggunakan PHP dan PHP My Admin
+maka, untik menjalankannya pertama harus mengaktifkan XAMPP htdocs,dan klik start Apache dan MySQL
+
+user juga dapat melakukan registrasi dan login dengan akun yang sudah diregistrasi
+
+untuk mengakses aplikasi ini ada 2 pengguna, yaitu admin dan user 
+untuk login sebagai admin silahkan masukkan :
+Username : admin 
+Password : admin
+
+Peran admin disini adalah untuk kelola user, acc atau tidak permintaan user untuk meminjam tempat,
+mengedit daftar user, menambahkan, mendelete dan mengedit nya.
+
+Untuk User pertamatama kita harus registrasi terlebih dahulu, dan mengisi data diri. 
+Setelah selesai akan otomatis ke tampilan utama dan silahkan masukkan Username dan Password yang telah anda buat.
+Saat meminjam, anda harus memasukkan nama Gedung yang dipinjam, tanggal peminjaman, tanggal selesai peminjaman.
+Admin yang akan menentukan peminjaman tersebut di acc atau tidak.
+
+database ynag harus di set di php my admin
+
+database logistique
+tabel:
+1.admin
+-username(primary key) varchar 50
+-password varchar 50
+2.customer
+-no_ktp(primary key) varchar 50
+-username varchar 50
+-password varchar 50
+-nama varchar 225
+-alamat varchar 225
+-umur varchar 225
+-jenis_kelamin varchar 1
+-no_telepon varchar 15
+-status varchar 15
+3.tempat
+-id_tempat (primary key) int 11
+-no_ktp (secondary key) varchar 50
+-kode_booking varchar(20)
+-tanggal_peminjaman timestamp
+-tanggal_selesai timestamp
+-namatempat varchar(50)
