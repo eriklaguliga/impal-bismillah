@@ -28,6 +28,10 @@ tabel:
 1.admin
 -username(primary key) varchar 50
 -password varchar 50
+khsus buat admin
+  .Tekan Insert dik kolom atas
+  .isi username 'admin'
+  .password 'admin'
 2.customer
 -no_ktp(primary key) varchar 50
 -username varchar 50
