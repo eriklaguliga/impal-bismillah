@@ -6,4 +6,4 @@ Feature: log in
   Scenario: Create Account
 	When I type all data that required
 	Then I click log in
-	The I succesfully book an log in
+	Then I succesfully book an log in
