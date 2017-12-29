@@ -4,7 +4,7 @@ Feature: edit data
   I need to input some data that required in web
 
   Scenario: Edit data
-	GIven I click edit profile
+	Given I click edit profile
 	When I type all data that required
 	Then I click save
 	And the data be sorted to database
