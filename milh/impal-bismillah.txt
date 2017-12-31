@@ -1,0 +1,632 @@
+                                                                     Page 1
+                         Data Dictionary Summary Report
+===============================================================================
+
+_POST   (Unresolved Variable)
+
+_SESSION   (Unresolved Variable)
+
+address   (Variable)
+   [insertcustomer.php, 8]
+
+age   (Variable)
+   [insertcustomer.php, 9]
+
+countAdmin   (Variable)
+   [loginauth.php, 27]
+
+countCustomer   (Variable)
+   [loginauth.php, 26]
+
+countMaskapai   (Variable)
+   [loginauth.php, 28]
+
+ctype_alnum   (Unresolved Function)
+
+data   (Variable)
+   [loginauth.php, 32]
+
+gender   (Variable)
+   [insertcustomer.php, 10]
+
+header   (Unresolved Function)
+
+insertQuery   (Variable)
+   [insertcustomer.php, 14]
+
+koneksi   (Unresolved Variable)
+
+MYSQLI_ASSOC   (Unresolved Constant)
+
+mysqli_error   (Unresolved Function)
+
+mysqli_fetch_array   (Unresolved Function)
+
+mysqli_num_rows   (Unresolved Function)
+
+mysqli_query   (Unresolved Function)
+
+nama   (Parameter)
+   [loginauth.php, 4]
+
+name   (Variable)
+   [insertcustomer.php, 7]
+
+noktp   (Variable)
+   [insertcustomer.php, 4]
+
+notel   (Variable)
+   [insertcustomer.php, 11]
+                                                                     Page 2
+                         Data Dictionary Summary Report
+===============================================================================
+
+password   (Variable)
+   [insertcustomer.php, 6]
+
+password   (Variable)
+   [loginauth.php, 12]
+
+queryGetAdmin   (Variable)
+   [loginauth.php, 19]
+
+queryGetCustomer   (Variable)
+   [loginauth.php, 18]
+
+queryGetMaskapai   (Variable)
+   [loginauth.php, 20]
+
+resultAdmin   (Variable)
+   [loginauth.php, 23]
+
+resultCustomer   (Variable)
+   [loginauth.php, 22]
+
+resultMaskapai   (Variable)
+   [loginauth.php, 24]
+
+session_destroy   (Unresolved Function)
+
+session_start   (Unresolved Function)
+
+setsession   (Function)
+   [loginauth.php, 4]
+
+userID   (Parameter)
+   [loginauth.php, 4]
+
+username   (Parameter)
+   [loginauth.php, 4]
+
+username   (Variable)
+   [insertcustomer.php, 5]
+
+username   (Variable)
+   [loginauth.php, 11]
+                                                                     Page 3
+                              File Contents Report
+===============================================================================
+
+index.php
+
+insertcustomer.php
+
+login.php
+
+loginauth.php
+
+logout.php
+
+registrasi.php
+                                                                     Page 4
+                      Program Unit Cross Reference Report
+===============================================================================
+
+ctype_alnum   (Unresolved Function)
+  Declared as: 
+    Php Call [loginauth.php, 15]     loginauth.php
+    Php Call [loginauth.php, 15]     loginauth.php
+
+header   (Unresolved Function)
+  Declared as: 
+    Php Call [loginauth.php, 16]     loginauth.php
+    Php Call [loginauth.php, 34]     loginauth.php
+    Php Call [loginauth.php, 39]     loginauth.php
+    Php Call [loginauth.php, 44]     loginauth.php
+
+mysqli_error   (Unresolved Function)
+  Declared as: 
+    Php Call [insertcustomer.php, 24]   insertcustomer.php
+
+mysqli_fetch_array   (Unresolved Function)
+  Declared as: 
+    Php Call [loginauth.php, 32]     loginauth.php
+    Php Call [loginauth.php, 37]     loginauth.php
+    Php Call [loginauth.php, 42]     loginauth.php
+
+mysqli_num_rows   (Unresolved Function)
+  Declared as: 
+    Php Call [loginauth.php, 26]     loginauth.php
+    Php Call [loginauth.php, 27]     loginauth.php
+    Php Call [loginauth.php, 28]     loginauth.php
+
+mysqli_query   (Unresolved Function)
+  Declared as: 
+    Php Call [insertcustomer.php, 17]   insertcustomer.php
+    Php Call [loginauth.php, 22]     loginauth.php
+    Php Call [loginauth.php, 23]     loginauth.php
+    Php Call [loginauth.php, 24]     loginauth.php
+
+session_destroy   (Unresolved Function)
+  Declared as: 
+    Php Call [logout.php, 3]         logout.php
+
+session_start   (Unresolved Function)
+  Declared as: 
+    Php Call [loginauth.php, 5]      setsession
+    Php Call [logout.php, 2]         logout.php
+    Php Call [index.php, 2]          index.php
+
+setsession   (Function)
+  Declared as: 
+    Php Define [loginauth.php, 4]    loginauth.php
+    Php Call [loginauth.php, 33]     loginauth.php
+    Php Call [loginauth.php, 38]     loginauth.php
+    Php Call [loginauth.php, 43]     loginauth.php
+                                                                     Page 5
+                         Object Cross Reference Report
+===============================================================================
+
+_POST   (Unresolved Variable)
+  Declared as: 
+    Php Use [insertcustomer.php, 4]   insertcustomer.php
+    Php Use [insertcustomer.php, 5]   insertcustomer.php
+    Php Use [insertcustomer.php, 6]   insertcustomer.php
+    Php Use [insertcustomer.php, 7]   insertcustomer.php
+    Php Use [insertcustomer.php, 8]   insertcustomer.php
+    Php Use [insertcustomer.php, 9]   insertcustomer.php
+    Php Use [insertcustomer.php, 10]   insertcustomer.php
+    Php Use [insertcustomer.php, 11]   insertcustomer.php
+    Php Use [loginauth.php, 11]      loginauth.php
+    Php Use [loginauth.php, 12]      loginauth.php
+
+_SESSION   (Unresolved Variable)
+  Declared as: 
+    Php Set [loginauth.php, 6]       setsession
+    Php Set [loginauth.php, 7]       setsession
+    Php Set [loginauth.php, 8]       setsession
+    Php Use [index.php, 6]           index.php
+
+address   (Variable)
+  Declared as: 
+    Php Set [insertcustomer.php, 8]   insertcustomer.php
+    Php Use [insertcustomer.php, 14]   insertcustomer.php
+
+age   (Variable)
+  Declared as: 
+    Php Set [insertcustomer.php, 9]   insertcustomer.php
+    Php Use [insertcustomer.php, 14]   insertcustomer.php
+
+countAdmin   (Variable)
+  Declared as: 
+    Php Set [loginauth.php, 27]      loginauth.php
+    Php Use [loginauth.php, 36]      loginauth.php
+
+countCustomer   (Variable)
+  Declared as: 
+    Php Set [loginauth.php, 26]      loginauth.php
+    Php Use [loginauth.php, 31]      loginauth.php
+
+countMaskapai   (Variable)
+  Declared as: 
+    Php Set [loginauth.php, 28]      loginauth.php
+    Php Use [loginauth.php, 41]      loginauth.php
+
+data   (Variable)
+  Declared as: 
+    Php Set [loginauth.php, 32]      loginauth.php
+    Php Use [loginauth.php, 33]      loginauth.php
+    Php Use [loginauth.php, 33]      loginauth.php
+    Php Use [loginauth.php, 33]      loginauth.php
+    Php Set [loginauth.php, 37]      loginauth.php
+    Php Use [loginauth.php, 38]      loginauth.php
+    Php Set [loginauth.php, 42]      loginauth.php
+    Php Use [loginauth.php, 43]      loginauth.php
+                                                                     Page 6
+                         Object Cross Reference Report
+===============================================================================
+    Php Use [loginauth.php, 43]      loginauth.php
+    Php Use [loginauth.php, 43]      loginauth.php
+
+gender   (Variable)
+  Declared as: 
+    Php Set [insertcustomer.php, 10]   insertcustomer.php
+    Php Use [insertcustomer.php, 14]   insertcustomer.php
+
+insertQuery   (Variable)
+  Declared as: 
+    Php Set [insertcustomer.php, 14]   insertcustomer.php
+    Php Use [insertcustomer.php, 17]   insertcustomer.php
+    Php Use [insertcustomer.php, 24]   insertcustomer.php
+
+koneksi   (Unresolved Variable)
+  Declared as: 
+    Php Use [insertcustomer.php, 17]   insertcustomer.php
+    Php Use [insertcustomer.php, 24]   insertcustomer.php
+    Php Use [loginauth.php, 22]      loginauth.php
+    Php Use [loginauth.php, 23]      loginauth.php
+    Php Use [loginauth.php, 24]      loginauth.php
+
+MYSQLI_ASSOC   (Unresolved Constant)
+  Declared as: 
+    Php Use [loginauth.php, 32]      loginauth.php
+    Php Use [loginauth.php, 37]      loginauth.php
+    Php Use [loginauth.php, 42]      loginauth.php
+
+nama   (Parameter)
+  Declared as: 
+    Php Define [loginauth.php, 4]    setsession
+    Php Use [loginauth.php, 8]       setsession
+
+name   (Variable)
+  Declared as: 
+    Php Set [insertcustomer.php, 7]   insertcustomer.php
+    Php Use [insertcustomer.php, 14]   insertcustomer.php
+
+noktp   (Variable)
+  Declared as: 
+    Php Set [insertcustomer.php, 4]   insertcustomer.php
+    Php Use [insertcustomer.php, 14]   insertcustomer.php
+
+notel   (Variable)
+  Declared as: 
+    Php Set [insertcustomer.php, 11]   insertcustomer.php
+    Php Use [insertcustomer.php, 14]   insertcustomer.php
+
+password   (Variable)
+  Declared as: 
+    Php Set [insertcustomer.php, 6]   insertcustomer.php
+    Php Use [insertcustomer.php, 14]   insertcustomer.php
+
+password   (Variable)
+  Declared as: 
+    Php Set [loginauth.php, 12]      loginauth.php
+                                                                     Page 7
+                         Object Cross Reference Report
+===============================================================================
+    Php Use [loginauth.php, 15]      loginauth.php
+    Php Use [loginauth.php, 18]      loginauth.php
+    Php Use [loginauth.php, 19]      loginauth.php
+    Php Use [loginauth.php, 20]      loginauth.php
+
+queryGetAdmin   (Variable)
+  Declared as: 
+    Php Set [loginauth.php, 19]      loginauth.php
+    Php Use [loginauth.php, 23]      loginauth.php
+
+queryGetCustomer   (Variable)
+  Declared as: 
+    Php Set [loginauth.php, 18]      loginauth.php
+    Php Use [loginauth.php, 22]      loginauth.php
+
+queryGetMaskapai   (Variable)
+  Declared as: 
+    Php Set [loginauth.php, 20]      loginauth.php
+    Php Use [loginauth.php, 24]      loginauth.php
+
+resultAdmin   (Variable)
+  Declared as: 
+    Php Set [loginauth.php, 23]      loginauth.php
+    Php Use [loginauth.php, 27]      loginauth.php
+    Php Use [loginauth.php, 37]      loginauth.php
+
+resultCustomer   (Variable)
+  Declared as: 
+    Php Set [loginauth.php, 22]      loginauth.php
+    Php Use [loginauth.php, 26]      loginauth.php
+    Php Use [loginauth.php, 32]      loginauth.php
+
+resultMaskapai   (Variable)
+  Declared as: 
+    Php Set [loginauth.php, 24]      loginauth.php
+    Php Use [loginauth.php, 28]      loginauth.php
+    Php Use [loginauth.php, 42]      loginauth.php
+
+userID   (Parameter)
+  Declared as: 
+    Php Define [loginauth.php, 4]    setsession
+    Php Use [loginauth.php, 6]       setsession
+
+username   (Parameter)
+  Declared as: 
+    Php Define [loginauth.php, 4]    setsession
+    Php Use [loginauth.php, 7]       setsession
+
+username   (Variable)
+  Declared as: 
+    Php Set [insertcustomer.php, 5]   insertcustomer.php
+    Php Use [insertcustomer.php, 14]   insertcustomer.php
+
+username   (Variable)
+  Declared as: 
+    Php Set [loginauth.php, 11]      loginauth.php
+                                                                     Page 8
+                         Object Cross Reference Report
+===============================================================================
+    Php Use [loginauth.php, 15]      loginauth.php
+    Php Use [loginauth.php, 18]      loginauth.php
+    Php Use [loginauth.php, 19]      loginauth.php
+    Php Use [loginauth.php, 20]      loginauth.php
+                                                                     Page 9
+                          Type Cross Reference Report
+===============================================================================
+                                                                     Page 10
+                         Simple Invocation Tree Report
+===============================================================================
+
+setsession
+| session_start
+                                                                     Page 11
+                         Program Unit Complexity Report
+===============================================================================
+
+index.php
+   Cyclomatic:                        2
+   Modified Cyclomatic:               2
+   Strict Cyclomatic:                 2
+   Essential:                         1
+   Max Nesting:                       1
+   Count Path:                        2
+   Count Path Log:                        0
+
+insertcustomer.php
+   Cyclomatic:                        2
+   Modified Cyclomatic:               2
+   Strict Cyclomatic:                 2
+   Essential:                         1
+   Max Nesting:                       1
+   Count Path:                        2
+   Count Path Log:                        0
+
+login.php
+   Cyclomatic:                        1
+   Modified Cyclomatic:               1
+   Strict Cyclomatic:                 1
+   Essential:                         1
+   Max Nesting:                       0
+   Count Path:                        1
+   Count Path Log:                        0
+
+loginauth.php
+   Cyclomatic:                        5
+   Modified Cyclomatic:               5
+   Strict Cyclomatic:                 5
+   Essential:                         1
+   Max Nesting:                       2
+   Count Path:                        5
+   Count Path Log:                        1
+
+logout.php
+   Cyclomatic:                        1
+   Modified Cyclomatic:               1
+   Strict Cyclomatic:                 1
+   Essential:                         1
+   Max Nesting:                       0
+   Count Path:                        1
+   Count Path Log:                        0
+
+registrasi.php
+   Cyclomatic:                        1
+   Modified Cyclomatic:               1
+   Strict Cyclomatic:                 1
+   Essential:                         1
+   Max Nesting:                       0
+   Count Path:                        1
+   Count Path Log:                        0
+
+setsession
+   Cyclomatic:                        1
+   Modified Cyclomatic:               1
+   Strict Cyclomatic:                 1
+   Essential:                         1
+   Max Nesting:                       0
+   Count Path:                        1
+   Count Path Log:                        0
+                                                                     Page 12
+                         Project Metrics Summary Report
+===============================================================================
+Classes:                      0
+Files:                        6
+Program Units:                1
+Lines:                      508
+Lines Blank:                 66
+Lines Code:                 439
+Lines Comment:                6
+Lines Inactive:               0
+Executable Statements:       54
+Declarative Statements:       1
+Ratio Comment/Code:        0.01
+                                                                     Page 13
+                              Program Unit Metrics
+===============================================================================
+
+setsession (Function)
+   Lines:                   6
+   Comment Lines:           0
+   Blank Lines:             0
+   Code Lines:              6
+   Inactive Lines:          0
+   Execution Statements:    4
+   Declaration Statements:  1
+   Ratio Comment/Code:      0.00
+                                                                     Page 14
+                                  File Metrics
+===============================================================================
+
+index.php
+   Lines:                   170
+   Comment Lines:           1
+   Blank Lines:             34
+   Preprocessor Lines:      0
+   Code Lines:              135
+   Inactive Lines:          0
+   Executable Code Lines:   0
+   Declarative Code Lines:  0
+   Execution Statements:    7
+   Declaration Statements:  0
+   Ratio Comment/Code:      0.01
+   Units                    0
+
+insertcustomer.php
+   Lines:                   27
+   Comment Lines:           0
+   Blank Lines:             6
+   Preprocessor Lines:      0
+   Code Lines:              21
+   Inactive Lines:          0
+   Executable Code Lines:   0
+   Declarative Code Lines:  0
+   Execution Statements:    13
+   Declaration Statements:  0
+   Ratio Comment/Code:      0.00
+   Units                    0
+
+login.php
+   Lines:                   91
+   Comment Lines:           0
+   Blank Lines:             3
+   Preprocessor Lines:      0
+   Code Lines:              88
+   Inactive Lines:          0
+   Executable Code Lines:   0
+   Declarative Code Lines:  0
+   Execution Statements:    1
+   Declaration Statements:  0
+   Ratio Comment/Code:      0.00
+   Units                    0
+
+loginauth.php
+   Lines:                   54
+   Comment Lines:           5
+   Blank Lines:             11
+   Preprocessor Lines:      0
+   Code Lines:              41
+   Inactive Lines:          0
+   Executable Code Lines:   0
+   Declarative Code Lines:  0
+   Execution Statements:    29
+   Declaration Statements:  1
+   Ratio Comment/Code:      0.12
+   Units                    1
+                                                                     Page 15
+                                  File Metrics
+===============================================================================
+
+logout.php
+   Lines:                   5
+   Comment Lines:           0
+   Blank Lines:             0
+   Preprocessor Lines:      0
+   Code Lines:              5
+   Inactive Lines:          0
+   Executable Code Lines:   0
+   Declarative Code Lines:  0
+   Execution Statements:    3
+   Declaration Statements:  0
+   Ratio Comment/Code:      0.00
+   Units                    0
+
+registrasi.php
+   Lines:                   161
+   Comment Lines:           0
+   Blank Lines:             12
+   Preprocessor Lines:      0
+   Code Lines:              149
+   Inactive Lines:          0
+   Executable Code Lines:   0
+   Declarative Code Lines:  0
+   Execution Statements:    1
+   Declaration Statements:  0
+   Ratio Comment/Code:      0.00
+   Units                    0
+                                                                     Page 16
+                          File Average Metrics Report
+===============================================================================
+
+index.php
+   Cyclomatic                         0
+   Modified                           0
+   Strict                             0
+   Essential                          0
+   Lines                              0
+   Code                               0
+   Comment                            0
+   Blank                              0
+
+insertcustomer.php
+   Cyclomatic                         0
+   Modified                           0
+   Strict                             0
+   Essential                          0
+   Lines                              0
+   Code                               0
+   Comment                            0
+   Blank                              0
+
+login.php
+   Cyclomatic                         0
+   Modified                           0
+   Strict                             0
+   Essential                          0
+   Lines                              0
+   Code                               0
+   Comment                            0
+   Blank                              0
+
+loginauth.php
+   Cyclomatic                         1
+   Modified                           1
+   Strict                             1
+   Essential                          1
+   Lines                              6
+   Code                               6
+   Comment                            0
+   Blank                              0
+
+logout.php
+   Cyclomatic                         0
+   Modified                           0
+   Strict                             0
+   Essential                          0
+   Lines                              0
+   Code                               0
+   Comment                            0
+   Blank                              0
+
+registrasi.php
+   Cyclomatic                         0
+   Modified                           0
+   Strict                             0
+   Essential                          0
+   Lines                              0
+   Code                               0
+   Comment                            0
+   Blank                              0
+                                                                     Page 17
+                           Uninitialized Items Report
+
+  Def: Items that have not been given an initial value at point of definition.
+===============================================================================
+                                                                     Page 18
+                          Unused Objects and Functions
+
+Def: A variable that is not read from, written to after declaration, 
+or passed to a function, function parameters that are unused in the function, 
+and functions that have no invocations. 
+===============================================================================
+                                                                     Page 19
+                             Unused Objects Report
+===============================================================================
+                                                                     Page 20
+                          Unused Program Units Report
+===============================================================================

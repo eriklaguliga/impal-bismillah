@@ -1,0 +1,65 @@
+<html><head><title>loginauth.php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="sourcestyles.css" />
+</head><body link="blue" vlink="blue">
+<h3>File: Z:\demo\impal\impal-bismillah\loginauth.php</h3>
+<SCRIPT>
+defaultStatus = "File: Z:\\demo\\impal\\impal-bismillah\\loginauth.php";
+top.document.title  = "loginauth.php";
+</SCRIPT>
+<pre><span class="default"></span><a name="1"><font size=-1>1     </font></a><span class="default">&lt;?php </span>
+<a name="2"><font size=-1>2     </font></a><span class="default">	</span><span class="keyword">include </span><span class="string">'config/db.php'</span><span class="default">; </span>
+<a name="3"><font size=-1>3     </font></a><span class="default"></span>
+<a name="4"><font size=-1>4     </font></a><span class="default">	</span><span class="keyword">function <a href="dictionary_S.html#39">setSession</a></span><span class="default">($<a href="dictionary_U.html#40">userID</a>,$<a href="dictionary_U.html#41">username</a>,$<a href="dictionary_N.html#25">nama</a>){</span>
+<a name="5"><font size=-1>5     </font></a><span class="default">		<a href="dictionary_S.html#38">session_start</a>();</span>
+<a name="6"><font size=-1>6     </font></a><span class="default">		$<a href="dictionary_Non-Alpha.html#8">_SESSION</a>[</span><span class="string">'userID'</span><span class="default">] = $<a href="dictionary_U.html#40">userID</a>;</span>
+<a name="7"><font size=-1>7     </font></a><span class="default">		$<a href="dictionary_Non-Alpha.html#8">_SESSION</a>[</span><span class="string">'username'</span><span class="default">] = $<a href="dictionary_U.html#41">username</a>;</span>
+<a name="8"><font size=-1>8     </font></a><span class="default">		$<a href="dictionary_Non-Alpha.html#8">_SESSION</a>[</span><span class="string">'nama'</span><span class="default">] = $<a href="dictionary_N.html#25">nama</a>;</span>
+<a name="9"><font size=-1>9     </font></a><span class="default">	}</span>
+<a name="10"><font size=-1>10     </font></a><span class="default"></span>
+<a name="11"><font size=-1>11     </font></a><span class="default">	$<a href="dictionary_U.html#43">username</a> =$<a href="dictionary_Non-Alpha.html#7">_POST</a>[</span><span class="string">'username'</span><span class="default">];</span>
+<a name="12"><font size=-1>12     </font></a><span class="default">	$<a href="dictionary_P.html#30">password</a> = $<a href="dictionary_Non-Alpha.html#7">_POST</a>[</span><span class="string">'password'</span><span class="default">];</span>
+<a name="13"><font size=-1>13     </font></a><span class="default"></span>
+<a name="14"><font size=-1>14     </font></a><span class="default">	</span><span class="comment">// pastikan username dan password adalah berupa huruf atau angka.</span>
+<a name="15"><font size=-1>15     </font></a><span class="comment">	</span><span class="keyword">if </span><span class="default">(!<a href="dictionary_C.html#14">ctype_alnum</a>($<a href="dictionary_U.html#43">username</a>) OR !<a href="dictionary_C.html#14">ctype_alnum</a>($<a href="dictionary_P.html#30">password</a>)){</span>
+<a name="16"><font size=-1>16     </font></a><span class="default">	  <a href="dictionary_H.html#17">header</a>(</span><span class="string">'location:login.php'</span><span class="default">);</span>
+<a name="17"><font size=-1>17     </font></a><span class="default">	}</span><span class="keyword">else</span><span class="default">{</span>
+<a name="18"><font size=-1>18     </font></a><span class="default">		$<a href="dictionary_Q.html#32">queryGetCustomer</a> = </span><span class="string">&quot;SELECT * FROM customer WHERE username='</span><span class="default">$<a href="dictionary_U.html#43">username</a></span><span class="string">' AND password='</span><span class="default">$<a href="dictionary_P.html#30">password</a></span><span class="string">'&quot;</span><span class="default">; </span>
+<a name="19"><font size=-1>19     </font></a><span class="default">		$<a href="dictionary_Q.html#31">queryGetAdmin</a> = </span><span class="string">&quot;SELECT * FROM admin WHERE username='</span><span class="default">$<a href="dictionary_U.html#43">username</a></span><span class="string">' AND password='</span><span class="default">$<a href="dictionary_P.html#30">password</a></span><span class="string">'&quot;</span><span class="default">;</span>
+<a name="20"><font size=-1>20     </font></a><span class="default">		$<a href="dictionary_Q.html#33">queryGetMaskapai</a> = </span><span class="string">&quot;SELECT * FROM maskapai WHERE username='</span><span class="default">$<a href="dictionary_U.html#43">username</a></span><span class="string">' AND password='</span><span class="default">$<a href="dictionary_P.html#30">password</a></span><span class="string">'&quot;</span><span class="default">;</span>
+<a name="21"><font size=-1>21     </font></a><span class="default"></span>
+<a name="22"><font size=-1>22     </font></a><span class="default">		$<a href="dictionary_R.html#35">resultCustomer</a> = <a href="dictionary_M.html#24">mysqli_query</a>($<a href="dictionary_K.html#19">koneksi</a>,$<a href="dictionary_Q.html#32">queryGetCustomer</a>);</span>
+<a name="23"><font size=-1>23     </font></a><span class="default">		$<a href="dictionary_R.html#34">resultAdmin</a> = <a href="dictionary_M.html#24">mysqli_query</a>($<a href="dictionary_K.html#19">koneksi</a>,$<a href="dictionary_Q.html#31">queryGetAdmin</a>);</span>
+<a name="24"><font size=-1>24     </font></a><span class="default">		$<a href="dictionary_R.html#36">resultMaskapai</a> = <a href="dictionary_M.html#24">mysqli_query</a>($<a href="dictionary_K.html#19">koneksi</a>,$<a href="dictionary_Q.html#33">queryGetMaskapai</a>);</span>
+<a name="25"><font size=-1>25     </font></a><span class="default"></span>
+<a name="26"><font size=-1>26     </font></a><span class="default">		$<a href="dictionary_C.html#12">countCustomer</a> = <a href="dictionary_M.html#23">mysqli_num_rows</a>($<a href="dictionary_R.html#35">resultCustomer</a>);</span>
+<a name="27"><font size=-1>27     </font></a><span class="default">		$<a href="dictionary_C.html#11">countAdmin</a> = <a href="dictionary_M.html#23">mysqli_num_rows</a>($<a href="dictionary_R.html#34">resultAdmin</a>);</span>
+<a name="28"><font size=-1>28     </font></a><span class="default">		$<a href="dictionary_C.html#13">countMaskapai</a> = <a href="dictionary_M.html#23">mysqli_num_rows</a>($<a href="dictionary_R.html#36">resultMaskapai</a>);</span>
+<a name="29"><font size=-1>29     </font></a><span class="default"></span>
+<a name="30"><font size=-1>30     </font></a><span class="default">		</span><span class="comment">// jika customer </span>
+<a name="31"><font size=-1>31     </font></a><span class="comment">		</span><span class="keyword">if </span><span class="default">($<a href="dictionary_C.html#12">countCustomer</a> &gt; </span><span class="number">0</span><span class="default">) {</span>
+<a name="32"><font size=-1>32     </font></a><span class="default">			$<a href="dictionary_D.html#15">data</a> = <a href="dictionary_M.html#22">mysqli_fetch_array</a>($<a href="dictionary_R.html#35">resultCustomer</a>,<a href="dictionary_M.html#20">MYSQLI_ASSOC</a>); </span><span class="comment">//get data</span>
+<a name="33"><font size=-1>33     </font></a><span class="comment">			<a href="dictionary_S.html#39">setSession</a></span><span class="default">($<a href="dictionary_D.html#15">data</a>[</span><span class="string">&quot;no_ktp&quot;</span><span class="default">], $<a href="dictionary_D.html#15">data</a>[</span><span class="string">&quot;username&quot;</span><span class="default">] , $<a href="dictionary_D.html#15">data</a>[</span><span class="string">&quot;nama&quot;</span><span class="default">]);</span>
+<a name="34"><font size=-1>34     </font></a><span class="default">			<a href="dictionary_H.html#17">header</a>(</span><span class="string">'location:index.php?page=customer'</span><span class="default">);</span>
+<a name="35"><font size=-1>35     </font></a><span class="default"></span>
+<a name="36"><font size=-1>36     </font></a><span class="default">		} </span><span class="keyword">elseif </span><span class="default">($<a href="dictionary_C.html#11">countAdmin</a> &gt; </span><span class="number">0</span><span class="default">) {</span>
+<a name="37"><font size=-1>37     </font></a><span class="default">			$<a href="dictionary_D.html#15">data</a> = <a href="dictionary_M.html#22">mysqli_fetch_array</a>($<a href="dictionary_R.html#34">resultAdmin</a>,<a href="dictionary_M.html#20">MYSQLI_ASSOC</a>); </span><span class="comment">//get data</span>
+<a name="38"><font size=-1>38     </font></a><span class="comment">			<a href="dictionary_S.html#39">setSession</a></span><span class="default">(</span><span class="string">&quot;1&quot;</span><span class="default">, $<a href="dictionary_D.html#15">data</a>[</span><span class="string">&quot;username&quot;</span><span class="default">] , </span><span class="string">&quot;Administrator&quot;</span><span class="default">);</span>
+<a name="39"><font size=-1>39     </font></a><span class="default">			<a href="dictionary_H.html#17">header</a>(</span><span class="string">'location:index.php?page=admin'</span><span class="default">);</span>
+<a name="40"><font size=-1>40     </font></a><span class="default"></span>
+<a name="41"><font size=-1>41     </font></a><span class="default">		} </span><span class="keyword">elseif </span><span class="default">($<a href="dictionary_C.html#13">countMaskapai</a> &gt; </span><span class="number">0</span><span class="default">) {</span>
+<a name="42"><font size=-1>42     </font></a><span class="default">			$<a href="dictionary_D.html#15">data</a> = <a href="dictionary_M.html#22">mysqli_fetch_array</a>($<a href="dictionary_R.html#36">resultMaskapai</a>,<a href="dictionary_M.html#20">MYSQLI_ASSOC</a>); </span><span class="comment">//get data</span>
+<a name="43"><font size=-1>43     </font></a><span class="comment">			<a href="dictionary_S.html#39">setSession</a></span><span class="default">($<a href="dictionary_D.html#15">data</a>[</span><span class="string">&quot;id_maskapai&quot;</span><span class="default">], $<a href="dictionary_D.html#15">data</a>[</span><span class="string">&quot;username&quot;</span><span class="default">] , $<a href="dictionary_D.html#15">data</a>[</span><span class="string">&quot;nama&quot;</span><span class="default">]);</span>
+<a name="44"><font size=-1>44     </font></a><span class="default">			<a href="dictionary_H.html#17">header</a>(</span><span class="string">'location:index.php?page=maskapai'</span><span class="default">);</span>
+<a name="45"><font size=-1>45     </font></a><span class="default">		} </span><span class="keyword">else </span><span class="default">{</span>
+<a name="46"><font size=-1>46     </font></a><span class="default">			</span><span class="keyword">echo </span><span class="string">&quot; &lt;script&gt; alert('username password salah') </span>
+<a name="47"><font size=-1>47     </font></a><span class="string">    				window.location = 'login.php';</span>
+<a name="48"><font size=-1>48     </font></a><span class="string">    				&lt;/script&gt;&quot;</span><span class="default">;</span>
+<a name="49"><font size=-1>49     </font></a><span class="default">		}</span>
+<a name="50"><font size=-1>50     </font></a><span class="default">	}</span>
+<a name="51"><font size=-1>51     </font></a><span class="default"></span>
+<a name="52"><font size=-1>52     </font></a><span class="default"> ?&gt;</span>
+<a name="53"><font size=-1>53     </font></a><span class="default"></span>
+<a name="54"><font size=-1>54     </font></a><span class="default"></span>
+<a name="55"><font size=-1>55     </font></a><span class="default"></span>
+</pre></body></html>
